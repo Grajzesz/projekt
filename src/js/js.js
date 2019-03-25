@@ -3,9 +3,11 @@ window.addEventListener('load', function() {
 });
 
 $(document).ready(function() {
+    $('.navigation').css('display', 'none');
     $('.toggle__button').on('click', function() {
-        $('#main').toggleClass('main_background2');
-        $('#main').removeClass('main_background');
+        $('#main').toggleClass('container2');
+        $('#main').removeClass('container');
+        $('.navigation').css('display', 'block');
         $('.toggle__button').css('display', 'none');
     });
     // $(document).keyup(function(e) {

@@ -1,5 +1,6 @@
 body {
   background-color: #05040B;
+  font-size: 16px;
 }
 
 .preloader {
@@ -29,33 +30,58 @@ body {
   min-width: 100%;
   margin: 0 auto;
   min-height: 100vh;
+  background: url(../img/367a5bbd4ace61ce07886a007c7ff2e3.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
   .container {
     max-width: 100%;
+    font-size: 0.8em;
   }
 }
 
-.container .navigation {
+.container2 {
+  min-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: url(../img/stop.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .container2 {
+    max-width: 100%;
+    font-size: 0.8em;
+  }
+}
+
+.container2 .navigation {
   width: 100%;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.164);
+  height: 50px;
 }
 
-.container .navigation .navigation__list {
+.container2 .navigation .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main_background {
-  background: url(../img/367a5bbd4ace61ce07886a007c7ff2e3.gif) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,14 +100,6 @@ body {
   -webkit-animation: button_change infinite alternate 1.3s;
           animation: button_change infinite alternate 1.3s;
   cursor: pointer;
-}
-
-.main_background2 {
-  background: url(../img/stop.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
 }
 
 @-webkit-keyframes button_change {
