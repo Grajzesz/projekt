@@ -7,7 +7,8 @@ $(document).ready(function() {
     $('.toggle__button').on('click', function() {
         $('#main').toggleClass('container2');
         $('#main').removeClass('container');
-        $('.navigation').css('display', 'block');
+        $('.navigation').css('display', 'flex');
+        $('.navigation').addClass("navigation");
         $('.toggle__button').css('display', 'none');
     });
     // $(document).keyup(function(e) {

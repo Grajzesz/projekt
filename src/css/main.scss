@@ -21,7 +21,6 @@ body {
 }
 
 .container {
-    
     min-width: 100%;
     margin: 0 auto;
     min-height: 100vh;
@@ -34,11 +33,9 @@ body {
         max-width: 100%;
         font-size: 0.8em;
     }
-    
-    
 }
+
 .container2 {
-    
     min-width: 100%;
     margin: 0 auto;
     min-height: 100vh;
@@ -52,21 +49,33 @@ body {
         font-size: 0.8em;
     }
     .navigation {
-        
         width: 100%;
         color: #fff;
-        background-color: rgba(255, 255, 255, 0.164);
+        background-color: rgba(0, 0, 0, 0.267);
         height: 50px;
+        font-family: 'Press Start 2P', cursive;
+        display: flex;
+        justify-content: flex-end;
         .navigation__list {
+            width: 50%;
             display: flex;
             justify-content: space-around;
             align-items: center;
+            
+            height: 100%;
+            li{
+                &:hover{
+                    color: #DC3A3C;
+                    transition: 0.5s;
+                }
+            }
         }
     }
 }
+
 .main_background {
-   height: 100%;
-   width: 100%;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,21 +83,9 @@ body {
         font-family: 'Press Start 2P', cursive;
         color: #fff;
         animation: button_change infinite alternate 1.3s;
-        cursor: pointer;
-        // align-self: center;
+        cursor: pointer; // align-self: center;
     }
 }
-
-// .main_background2 {
-//     background: url(../img/stop.png) no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     height: 100vh;
-//     width: 100%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-// }
 
 @keyframes button_change {
     0% {

@@ -65,11 +65,19 @@ body {
 .container2 .navigation {
   width: 100%;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.164);
+  background-color: rgba(0, 0, 0, 0.267);
   height: 50px;
+  font-family: 'Press Start 2P', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .container2 .navigation .navigation__list {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,6 +86,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+}
+
+.container2 .navigation .navigation__list li:hover {
+  color: #DC3A3C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main_background {
