@@ -114,7 +114,7 @@ body {
   transition: 0.5s;
 }
 
-.main_background {
+.container2 .main_background {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -128,7 +128,7 @@ body {
           justify-content: center;
 }
 
-.main_background .monster {
+.container2 .main_background .monster {
   width: 140px;
   height: 173px;
   margin: 2% auto;
@@ -137,7 +137,12 @@ body {
           animation: play 0.4s steps(4) infinite;
 }
 
-.main_background .toggle__button {
+.toggle__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   font-family: 'Press Start 2P', cursive;
   color: #fff;
   -webkit-animation: button_change infinite alternate 1.3s;

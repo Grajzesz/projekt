@@ -81,27 +81,31 @@ body {
             }
         }
     }
+    .main_background {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .monster {
+            width: 140px;
+            height: 173px;
+            margin: 2% auto;
+            background: url('/src/img/spritesheet.png') left;
+            animation: play 0.4s steps(4) infinite;
+        }
+    }
 }
 
-.main_background {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .monster {
-        width: 140px;
-        height: 173px;
-        margin: 2% auto;
-        background: url('/src/img/spritesheet.png') left;
-        animation: play 0.4s steps(4) infinite;
-    }
-    .toggle__button {
-        font-family: 'Press Start 2P', cursive;
-        color: #fff;
-        animation: button_change infinite alternate 1.3s;
-        cursor: pointer; // align-self: center;
-    }
+.toggle__button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    animation: button_change infinite alternate 1.3s;
+    cursor: pointer; // align-self: center;
 }
 
 @keyframes play {
