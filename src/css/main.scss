@@ -40,7 +40,7 @@ body {
     min-width: 100%;
     margin: 0 auto;
     min-height: 100vh;
-    background: linear-gradient( rgba(141, 133, 133, 0.949), rgba(185, 173, 173, 0.894)), url(../img/stop.png) no-repeat;
+    background: linear-gradient( rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -89,11 +89,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    .monster {
+        width: 190px;
+        height: 240px;
+        margin: 2% auto;
+        background: url('https://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png') left center;
+        animation: play .8s steps(10) infinite;
+    } // width: 40px;
+    // height: 40px;
+    // background: url("/src/img/spritesheet.png") left center;
+    // animation: play 0.8s steps (4) infinite;
     .toggle__button {
         font-family: 'Press Start 2P', cursive;
         color: #fff;
         animation: button_change infinite alternate 1.3s;
         cursor: pointer; // align-self: center;
+    }
+}
+
+@keyframes play {
+    100% {
+        background-position: -1900px;
     }
 }
 
