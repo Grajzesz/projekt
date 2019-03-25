@@ -128,7 +128,12 @@ body {
           justify-content: center;
 }
 
-.container2 .main_background .monster {
+.container2 .main_background .monster__container {
+  width: 70px;
+  height: 86.5px;
+}
+
+.container2 .main_background .monster__container .monster {
   width: 140px;
   height: 173px;
   margin: 2% auto;
@@ -152,13 +157,13 @@ body {
 
 @-webkit-keyframes play {
   100% {
-    background-position: -570px;
+    background-position: -285px;
   }
 }
 
 @keyframes play {
   100% {
-    background-position: -570px;
+    background-position: -285px;
   }
 }
 
