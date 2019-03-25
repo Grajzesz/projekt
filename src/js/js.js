@@ -6,9 +6,11 @@ $(document).ready(function() {
     $('.navigation').css('display', 'none');
     $('.toggle__button').on('click', function() {
         $('#main').toggleClass('container2');
+
         $('#main').removeClass('container');
+
         $('.navigation').css('display', 'flex');
-        $('.navigation').addClass("navigation");
+        $('.navigation').addClass('navigation');
         $('.toggle__button').css('display', 'none');
     });
     // $(document).keyup(function(e) {

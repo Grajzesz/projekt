@@ -29,12 +29,13 @@ body {
 .container {
   min-width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100vh;
   background: url(../img/367a5bbd4ace61ce07886a007c7ff2e3.gif) no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
+  position: fixed;
 }
 
 @media (max-width: 500px) {
@@ -48,9 +49,11 @@ body {
   min-width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  background: url(../img/stop.png) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(141, 133, 133, 0.949)), to(rgba(185, 173, 173, 0.894))), url(../img/stop.png) no-repeat;
+  background: linear-gradient(rgba(141, 133, 133, 0.949), rgba(185, 173, 173, 0.894)), url(../img/stop.png) no-repeat;
   background-size: cover;
   background-position: center;
+  position: fixed;
   height: 100vh;
   width: 100%;
 }
@@ -65,19 +68,29 @@ body {
 .container2 .navigation {
   width: 100%;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.267);
+  background-color: rgba(255, 0, 157, 0.527);
   height: 50px;
   font-family: 'Press Start 2P', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em;
+}
+
+.container2 .navigation .navigation__signature {
+  margin-left: 10px;
+  font-family: 'Clicker Script', cursive;
+  font-size: 1.5em;
 }
 
 .container2 .navigation .navigation__list {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,8 +102,14 @@ body {
   height: 100%;
 }
 
+.container2 .navigation .navigation__list li {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .container2 .navigation .navigation__list li:hover {
-  color: #DC3A3C;
+  color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -137,20 +156,19 @@ body {
 
 @-webkit-keyframes fadeout {
   0% {
-    display: grid;
+    opacity: 1;
   }
   100% {
-    display: none;
+    opacity: 0;
   }
 }
 
 @keyframes fadeout {
   0% {
-    display: -ms-grid;
-    display: grid;
+    opacity: 1;
   }
   100% {
-    display: none;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
