@@ -1,0 +1,58 @@
+body {
+    background: url(SuperMarioBrosMap1-1BG23.png) no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* animation: ruch 300s linear infinite alternate; */
+}
+
+@keyframes ruch {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: -10000px 0, -7500px 0, -5000px 0;
+    }
+}
+
+/* .kot { */
+
+#kot {
+    background: url(pobrane.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 64px;
+    right: 50%;
+}
+
+.minicircle {
+    animation: jump 1.5s ease 0s 1 normal;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-100px);
+    }
+    40% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(0);
+    }
+}
+
+/* .minicircle {
+    width: 200px;
+    height: 200px;
+    background-color: #86c5bd;
+    border-radius: 50%;
+    position: fixed;
+    -webkit-animation: slide 2s linear; */
