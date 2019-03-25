@@ -1,13 +1,13 @@
-window.addEventListener('load', function(){
-document.querySelector(".preloader").style.display="none";
+window.addEventListener('load', function() {
+    document.querySelector('.preloader').style.display = 'none';
+});
 
-})
-
-
-
-
-
-// $(document).ready(function() {
+$(document).ready(function() {
+    $('.toggle__button').on('click', function() {
+        $('#main').toggleClass('main_background2');
+        $('#main').removeClass('main_background');
+        $('.toggle__button').css('display', 'none');
+    });
     // $(document).keyup(function(e) {
     //     $('#kot').removeClass('minicircle');
     // });
@@ -29,7 +29,4 @@ document.querySelector(".preloader").style.display="none";
     //             initX + 'px';
     //     }
     // });
-
-
-// });
-
+});
