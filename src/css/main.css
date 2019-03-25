@@ -129,12 +129,12 @@ body {
 }
 
 .main_background .monster {
-  width: 190px;
-  height: 240px;
+  width: 140px;
+  height: 173px;
   margin: 2% auto;
-  background: url("https://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png") left center;
-  -webkit-animation: play 0.8s steps(10) infinite;
-          animation: play 0.8s steps(10) infinite;
+  background: url("/src/img/spritesheet.png") left;
+  -webkit-animation: play 0.4s steps(4) infinite;
+          animation: play 0.4s steps(4) infinite;
 }
 
 .main_background .toggle__button {
@@ -147,13 +147,13 @@ body {
 
 @-webkit-keyframes play {
   100% {
-    background-position: -1900px;
+    background-position: -570px;
   }
 }
 
 @keyframes play {
   100% {
-    background-position: -1900px;
+    background-position: -570px;
   }
 }
 
