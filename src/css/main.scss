@@ -7,8 +7,23 @@ body {
     margin: 0 auto;
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/src/img/tree.gif") no-repeat;
+    background-size: cover;
+    background-color: #030B23;
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .main_background {
-    background: url(../img/main_background.gif) no-repeat;
+    background: url(../img/retro-game-background-4.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -23,13 +38,11 @@ body {
     }
 }
 
-
-@keyframes button_change{
-
-    0%{
+@keyframes button_change {
+    0% {
         color: #DC3A3C;
     }
-    50%{
+    50% {
         color: #fff;
     }
 }

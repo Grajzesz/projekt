@@ -7,8 +7,28 @@ body {
   margin: 0 auto;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/src/img/tree.gif") no-repeat;
+  background-size: cover;
+  background-color: #030B23;
+  z-index: 999;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main_background {
-  background: url(../img/main_background.gif) no-repeat;
+  background: url(../img/retro-game-background-4.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 700px;

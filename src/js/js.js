@@ -1,13 +1,13 @@
-window.addEventListener('load' , function(){
+window.addEventListener('load', function(){
+document.querySelector(".preloader").style.display="none";
 
-    
 })
 
 
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
     // $(document).keyup(function(e) {
     //     $('#kot').removeClass('minicircle');
     // });
@@ -31,5 +31,5 @@ $(document).ready(function() {
     // });
 
 
-});
+// });
 
