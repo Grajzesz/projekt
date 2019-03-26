@@ -20,6 +20,10 @@ $(document).ready(function() {
             $('.typewriter').css('display', 'block');
             $('.baba').css('visibility', 'visible');
         }, 1600);
+        setTimeout(function() {
+            $('.monster').css('display', 'none');
+        }, 2200);
+
         $('#menuToggle').on('click', function() {
             $('.baba').toggle();
         });

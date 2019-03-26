@@ -8,6 +8,8 @@
   background-position: center;
   height: 100vh;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 @media (max-width: 600px) {
@@ -25,7 +27,6 @@
   background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
   background-size: cover;
   background-position: center;
-  position: fixed;
   height: 100vh;
   width: 100%;
   display: -webkit-box;
@@ -35,6 +36,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
   /* DEMO-SPECIFIC STYLES */
   /* The typing effect */
 }
