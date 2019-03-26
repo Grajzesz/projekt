@@ -527,13 +527,13 @@ a {
 
 @-webkit-keyframes play_spider {
   100% {
-    background-position: -476px;
+    background-position: 192.8px;
   }
 }
 
 @keyframes play_spider {
   100% {
-    background-position: -476px;
+    background-position: 192.8px;
   }
 }
 
@@ -827,14 +827,14 @@ a {
   margin: 2% auto;
   background: url(../img/spider3.png) top;
   background-size: cover;
-  -webkit-animation: play_spider 0.4s steps(7) infinite, spider_left 13.5s linear infinite;
-          animation: play_spider 0.4s steps(7) infinite, spider_left 13.5s linear infinite;
+  -webkit-animation: play_spider 0.4s steps(7) infinite, spider_left 30.5s linear infinite;
+          animation: play_spider 0.4s steps(7) infinite, spider_left 30.5s linear infinite;
 }
 
 @media (max-width: 700px) {
   .show__content .main__lorem .main__portfolio .logos__background .monster__spider_container .monster__spider {
-    -webkit-animation: play_spider 0.4s steps(7) infinite, spider_left 12s linear infinite;
-            animation: play_spider 0.4s steps(7) infinite, spider_left 12s linear infinite;
+    -webkit-animation: play_spider 0.4s steps(7) infinite, spider_left 30s linear infinite;
+            animation: play_spider 0.4s steps(7) infinite, spider_left 30s linear infinite;
   }
 }
 

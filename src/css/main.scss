@@ -129,10 +129,10 @@
                         margin: 2% auto;
                         background: url(../img/spider3.png)top;
                         background-size: cover;
-                        animation: play_spider .4s steps(7) infinite, spider_left 13.5s linear infinite;
+                        animation: play_spider .4s steps(7) infinite, spider_left 30.5s linear infinite;
 
                         @media (max-width: 700px) {
-                            animation: play_spider 0.4s steps(7) infinite, spider_left 12s linear infinite;
+                            animation: play_spider 0.4s steps(7) infinite, spider_left 30s linear infinite;
                         }
                     }
                 }
