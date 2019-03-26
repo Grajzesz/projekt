@@ -3,13 +3,137 @@ body {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
+#menuToggle {
+  display: none;
+  z-index: 5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+@media (max-width: 500px) {
+  #menuToggle {
+    display: block;
+  }
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #aa0063;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -70px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+  * And let's slide it in from the left
+  */
+#menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
 .preloader {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/src/img/tree.gif") no-repeat;
+  background: url(../img/tree.gif) no-repeat;
   background-size: cover;
   background-color: #030B23;
   background-position: center;
@@ -28,6 +152,7 @@ body {
 
 .container {
   min-width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   height: 100vh;
   background: url(../img/367a5bbd4ace61ce07886a007c7ff2e3.gif) no-repeat;
@@ -56,6 +181,16 @@ body {
   position: fixed;
   height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* DEMO-SPECIFIC STYLES */
+  /* The typing effect */
+  /* The typewriter cursor effect */
 }
 
 @media (max-width: 500px) {
@@ -68,9 +203,9 @@ body {
 .container2 .navigation {
   width: 100%;
   color: #fff;
-  background-color: rgba(255, 0, 157, 0.527);
+  background-color: #000;
   height: 50px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,10 +218,18 @@ body {
   font-size: 0.8em;
 }
 
+@media (max-width: 500px) {
+  .container2 .navigation {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .container2 .navigation .navigation__signature {
   margin-left: 10px;
   font-family: 'Clicker Script', cursive;
   font-size: 1.5em;
+  color: #aa0063;
 }
 
 .container2 .navigation .navigation__list {
@@ -102,6 +245,12 @@ body {
   height: 100%;
 }
 
+@media (max-width: 500px) {
+  .container2 .navigation .navigation__list {
+    display: none !important;
+  }
+}
+
 .container2 .navigation .navigation__list li {
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -109,9 +258,13 @@ body {
 }
 
 .container2 .navigation .navigation__list li:hover {
-  color: black;
+  color: #aa0063;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.container2 .navigation .navigation__list a {
+  color: #fff;
 }
 
 .container2 .main_background {
@@ -120,9 +273,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -139,15 +289,87 @@ body {
 
 .container2 .main_background .monster__container .monster {
   top: 20px;
-  left: 1400px;
+  left: 1600px;
   position: absolute;
   width: 100%;
   height: 100%;
   margin: 2% auto;
-  background: url("/src/img/spritesheet.png") left;
+  background: url(../img/spritesheet.png) left;
   background-size: cover;
-  -webkit-animation: play 0.4s steps(4) infinite, sonic_left 4s linear;
-          animation: play 0.4s steps(4) infinite, sonic_left 4s linear;
+  -webkit-animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1s;
+          animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1s;
+}
+
+@media (max-width: 500px) {
+  .container2 .main_background .monster__container .monster {
+    -webkit-animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1.6s;
+            animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1.6s;
+  }
+}
+
+.container2 .typewriter {
+  position: absolute;
+  top: 70px;
+}
+
+.container2 .typewriter h1 {
+  top: 20px;
+  color: black;
+  font-family: monospace;
+  overflow: hidden;
+  visibility: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
+          animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    display: none;
+    visibility: visible;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    display: none;
+    visibility: visible;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .toggle__button {

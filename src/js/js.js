@@ -4,6 +4,8 @@ window.addEventListener('load', function() {
 
 $(document).ready(function() {
     $('.navigation').css('display', 'none');
+    $('.typewriter').css('display', 'none');
+
     $('.toggle__button').on('click', function() {
         $('#main').toggleClass('container2');
 
@@ -12,6 +14,17 @@ $(document).ready(function() {
         $('.navigation').css('display', 'flex');
         $('.navigation').addClass('navigation');
         $('.toggle__button').css('display', 'none');
+        setTimeout(function() {
+            $('.typewriter').css('display', 'block');
+            $('.baba').css('visibility', 'visible');
+        }, 2000);
+        $('#menuToggle').on("click", function(){
+            $('.baba').toggle();
+        });
+        
+
+        // $('#menuToggle').toggle(".baba").css('visibility', 'hidden');
+        // $('.baba').css('visibility', 'visible');
     });
     // $(document).keyup(function(e) {
     //     $('#kot').removeClass('minicircle');
