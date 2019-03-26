@@ -9,6 +9,7 @@ a {
 
 #menuToggle {
   display: none;
+  position: relative;
   z-index: 5;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -16,7 +17,7 @@ a {
        user-select: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #menuToggle {
     display: block;
   }
@@ -96,8 +97,8 @@ a {
   */
 #menu {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -70px;
+  width: 100vw;
+  margin: -100px 0 0 -100px;
   padding: 50px;
   padding-top: 125px;
   background: #ededed;
@@ -114,9 +115,20 @@ a {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li {
+#menu a {
+  cursor: pointer;
+}
+
+#menu a li {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 1em;
+  color: #000;
+}
+
+#menu a li:hover {
+  color: #aa0063;
 }
 
 /*
@@ -150,6 +162,74 @@ a {
           animation: fadeout ease-out linear 1s;
 }
 
+.navigation {
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  height: 50px;
+  font-family: 'Press Start 2P', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em;
+}
+
+@media (max-width: 700px) {
+  .navigation {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.navigation .navigation__signature {
+  margin-left: 10px;
+  font-family: 'Clicker Script', cursive;
+  font-size: 1.5em;
+  color: #aa0063;
+}
+
+.navigation .navigation__list {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .navigation .navigation__list {
+    display: none !important;
+    font-size: 0.8em;
+  }
+}
+
+.navigation .navigation__list li {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navigation .navigation__list li:hover {
+  color: #aa0063;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navigation .navigation__list a {
+  color: #fff;
+}
+
 .container {
   min-width: 100%;
   max-width: 1400px;
@@ -163,7 +243,7 @@ a {
   position: fixed;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .container {
     max-width: 100%;
     font-size: 0.8em;
@@ -188,83 +268,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* DEMO-SPECIFIC STYLES */
-  /* The typing effect */
-  /* The typewriter cursor effect */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .container2 {
     max-width: 100%;
     font-size: 0.8em;
   }
-}
-
-.container2 .navigation {
-  width: 100%;
-  color: #fff;
-  background-color: #000;
-  height: 50px;
-  font-family: 'Press Start 2P', cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.8em;
-}
-
-@media (max-width: 500px) {
-  .container2 .navigation {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-.container2 .navigation .navigation__signature {
-  margin-left: 10px;
-  font-family: 'Clicker Script', cursive;
-  font-size: 1.5em;
-  color: #aa0063;
-}
-
-.container2 .navigation .navigation__list {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-}
-
-@media (max-width: 500px) {
-  .container2 .navigation .navigation__list {
-    display: none !important;
-  }
-}
-
-.container2 .navigation .navigation__list li {
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.container2 .navigation .navigation__list li:hover {
-  color: #aa0063;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.container2 .navigation .navigation__list a {
-  color: #fff;
 }
 
 .container2 .main_background {
@@ -277,9 +287,28 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  /* DEMO-SPECIFIC STYLES */
+  /* The typing effect */
+  /* The typewriter cursor effect */
 }
 
-.container2 .main_background .monster__container {
+.container2 .main_background .show__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+}
+
+.container2 .main_background .show__content .monster__container {
   width: 46.66667px;
   height: 57.66667px;
   position: absolute;
@@ -287,7 +316,7 @@ a {
   left: -100px;
 }
 
-.container2 .main_background .monster__container .monster {
+.container2 .main_background .show__content .monster__container .monster {
   top: 20px;
   left: 1600px;
   position: absolute;
@@ -300,19 +329,29 @@ a {
           animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1s;
 }
 
-@media (max-width: 500px) {
-  .container2 .main_background .monster__container .monster {
+@media (max-width: 700px) {
+  .container2 .main_background .show__content .monster__container .monster {
     -webkit-animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1.6s;
             animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1.6s;
   }
 }
 
-.container2 .typewriter {
+.container2 .main_background .show__content .lorem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  display: block;
+  top: 150px;
+}
+
+.container2 .main_background .typewriter {
   position: absolute;
   top: 70px;
 }
 
-.container2 .typewriter h1 {
+.container2 .main_background .typewriter h1 {
   top: 20px;
   color: black;
   font-family: monospace;
