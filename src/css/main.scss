@@ -45,6 +45,74 @@
                 background-size: cover;
                 position: relative;
 
+                .line1 {
+                    position: absolute;
+                    top: -20px;
+                    height: 1px;
+                    width: 115%;
+                    background-color: #000;
+                }
+
+                .line2 {
+                    position: absolute;
+                    top: -30px;
+                    height: 1px;
+                    width: 100%;
+                    background-color: #000;
+                }
+
+                .line3 {
+                    position: absolute;
+                    left: -30px;
+                    height: 120%;
+                    width: 1px;
+                    background-color: #000;
+                }
+
+                .line4 {
+                    position: absolute;
+                    left: -40px;
+                    height: 135%;
+                    width: 1px;
+                    background-color: #000;
+                }
+
+                .line5 {
+                    bottom: -15%;
+                    position: absolute;
+                    right: -30px;
+                    height: 60%;
+                    width: 1px;
+                    background-color: #000;
+                }
+
+                .line6 {
+                    bottom: -8%;
+                    position: absolute;
+                    right: -40px;
+                    height: 35%;
+                    width: 1px;
+                    background-color: #000;
+                }
+
+                .line7 {
+                    bottom: -7%;
+                    position: absolute;
+                    right: -54px;
+                    height: 1px;
+                    width: 70%;
+                    background-color: #000;
+                }
+
+                .line8 {
+                    bottom: -9%;
+                    position: absolute;
+                    right: -40px;
+                    height: 1px;
+                    width: 40%;
+                    background-color: #000;
+                }
+
                 .monster__spider_container {
                     width: (140px/3);
                     height: (200px/3);
