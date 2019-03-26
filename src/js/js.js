@@ -22,7 +22,7 @@ $(document).ready(function() {
         }, 1600);
         setTimeout(function() {
             $('.monster').css('display', 'none');
-        }, 2100);
+        }, 2200);
 
         $('#menuToggle').on('click', function() {
             $('.baba').toggle();

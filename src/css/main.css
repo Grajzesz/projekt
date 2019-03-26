@@ -431,6 +431,112 @@ a {
   }
 }
 
+@-webkit-keyframes spider_left {
+  0% {
+    right: 0;
+    top: 200%;
+  }
+  10% {
+    right: 800%;
+    top: 150%;
+  }
+  20% {
+    right: 500%;
+    top: 70%;
+  }
+  30% {
+    right: 100%;
+    top: -70%;
+  }
+  40% {
+    right: -500%;
+    top: 100%;
+  }
+  50% {
+    right: -1000%;
+    top: 50%;
+  }
+  60% {
+    right: -600%;
+    top: 0%;
+  }
+  70% {
+    right: -200%;
+    top: -30%;
+  }
+  80% {
+    right: 300%;
+    top: -100%;
+  }
+  90% {
+    right: 100%;
+    top: 0;
+  }
+  100% {
+    right: 0;
+    top: 200%;
+  }
+}
+
+@keyframes spider_left {
+  0% {
+    right: 0;
+    top: 200%;
+  }
+  10% {
+    right: 800%;
+    top: 150%;
+  }
+  20% {
+    right: 500%;
+    top: 70%;
+  }
+  30% {
+    right: 100%;
+    top: -70%;
+  }
+  40% {
+    right: -500%;
+    top: 100%;
+  }
+  50% {
+    right: -1000%;
+    top: 50%;
+  }
+  60% {
+    right: -600%;
+    top: 0%;
+  }
+  70% {
+    right: -200%;
+    top: -30%;
+  }
+  80% {
+    right: 300%;
+    top: -100%;
+  }
+  90% {
+    right: 100%;
+    top: 0;
+  }
+  100% {
+    right: 0;
+    top: 200%;
+  }
+}
+
+@-webkit-keyframes play_spider {
+  100% {
+    background-position: -476px;
+  }
+}
+
+@keyframes play_spider {
+  100% {
+    background-position: -476px;
+  }
+}
+
 @-webkit-keyframes typing {
   0% {
     display: none;
@@ -602,7 +708,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -635,6 +741,33 @@ a {
   width: 90%;
   background: url(../img/Spider-Web-PNG-File.png) no-repeat center;
   background-size: cover;
+  position: relative;
+}
+
+.show__content .main__lorem .main__portfolio .logos__background .monster__spider_container {
+  width: 46.66667px;
+  height: 66.66667px;
+  position: absolute;
+  top: 35px;
+}
+
+.show__content .main__lorem .main__portfolio .logos__background .monster__spider_container .monster__spider {
+  top: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 2% auto;
+  background: url(../img/spider3.png) top;
+  background-size: cover;
+  -webkit-animation: play_spider 0.4s steps(7) infinite, spider_left 13.5s linear infinite;
+          animation: play_spider 0.4s steps(7) infinite, spider_left 13.5s linear infinite;
+}
+
+@media (max-width: 700px) {
+  .show__content .main__lorem .main__portfolio .logos__background .monster__spider_container .monster__spider {
+    -webkit-animation: play_spider 0.4s steps(7) infinite, spider_left 12s linear infinite;
+            animation: play_spider 0.4s steps(7) infinite, spider_left 12s linear infinite;
+  }
 }
 
 .show__content .main__lorem .main__portfolio .logos__background .logos__container {
