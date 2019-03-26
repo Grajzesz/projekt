@@ -27,7 +27,6 @@
   background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +35,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   /* DEMO-SPECIFIC STYLES */
   /* The typing effect */
 }
@@ -65,7 +65,7 @@
   height: 86.5px;
   position: absolute;
   top: 35px;
-  left: -100px;
+  left: -50px;
 }
 
 .container2 .main_background .monster__container .monster {
@@ -108,8 +108,8 @@
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
   /* Adjust as needed */
-  -webkit-animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
-          animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
+  -webkit-animation: typing 0.2s steps(30, end), blink-caret 0.5s step-end;
+          animation: typing 0.2s steps(30, end), blink-caret 0.5s step-end;
 }
 
 @media (max-width: 700px) {

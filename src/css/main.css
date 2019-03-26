@@ -259,7 +259,6 @@ a {
   background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,7 +267,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   /* DEMO-SPECIFIC STYLES */
   /* The typing effect */
 }
@@ -297,7 +297,7 @@ a {
   height: 86.5px;
   position: absolute;
   top: 35px;
-  left: -100px;
+  left: -50px;
 }
 
 .container2 .main_background .monster__container .monster {
@@ -340,8 +340,8 @@ a {
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
   /* Adjust as needed */
-  -webkit-animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
-          animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
+  -webkit-animation: typing 0.2s steps(30, end), blink-caret 0.5s step-end;
+          animation: typing 0.2s steps(30, end), blink-caret 0.5s step-end;
 }
 
 @media (max-width: 700px) {
@@ -513,10 +513,7 @@ a {
   font-family: 'Montserrat', sans-serif;
   margin: 10% 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+  position: absolute;
   display: block;
   top: 150px;
   font-size: 1.5em;
@@ -524,7 +521,6 @@ a {
 
 .show__content .logos__container {
   width: 50%;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,61 +528,105 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .show__content .logos__container .html {
   background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  height: 70px;
+  width: 70px;
 }
 
-.show__content .logos__container .jscript {
+.show__content .logos__container .logos__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+
+.show__content .logos__container .logos__two .jscript {
   background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  height: 70px;
+  width: 70px;
 }
 
-.show__content .logos__container .git {
+.show__content .logos__container .logos__two .git {
   background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  height: 70px;
+  width: 70px;
 }
 
-.show__content .logos__container .csslogo {
+.show__content .logos__container .logos__three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+
+.show__content .logos__container .logos__three .csslogo {
   background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  height: 70px;
+  width: 70px;
 }
 
-.show__content .logos__container .sasslogo {
+.show__content .logos__container .logos__three .sasslogo {
   background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  height: 70px;
+  width: 70px;
 }
 
-.show__content .logos__container .jquerylogo {
+.show__content .logos__container .logos__three .jquerylogo {
   background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  width: 100px;
+  height: 70px;
 }
 
-.show__content .logos__container .reactlogo {
+.show__content .logos__container .logos__two_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+}
+
+.show__content .logos__container .logos__two_two .reactlogo {
   background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  height: 70px;
+  width: 70px;
 }
 
-.show__content .logos__container .nodelogo {
+.show__content .logos__container .logos__two_two .nodelogo {
   background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px;
+  height: 70px;
+  width: 70px;
 }
 /*# sourceMappingURL=main.css.map */
