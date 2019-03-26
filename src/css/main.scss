@@ -27,109 +27,130 @@
             margin: 5% 0 25% 0;
             margin: 0 auto;
             display: flex;
-            width: 80%;
+            width: 100%;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
-            .logos__container {
-
+            .logos__background {
+                height: 400px;
                 margin-top: 300px;
+                margin-bottom: 10%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
+                width: 90%;
+                background: url(../img/Spider-Web-PNG-File.png) no-repeat center;
+                background-size: cover;
 
-                .html {
-                    background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
-                    background-size: contain;
-                    background-position: center;
-                    height: 70px;
-                    width: 70px;
-                    animation: shake infinite linear;
-                }
+                .logos__container {
 
-                .logos__two {
+                    // margin-top: 300px;
+                    // margin-bottom: 10%;
                     display: flex;
-                    justify-content: space-around;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
                     width: 100%;
-                    margin: 5px;
 
-                    .jscript {
-                        background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
+                    .html {
+                        background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
                         background-size: contain;
                         background-position: center;
                         height: 70px;
                         width: 70px;
+
                     }
 
-                    .git {
-                        background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        height: 70px;
-                        width: 70px;
-                    }
-                }
+                    .logos__two {
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
+                        margin: 5px;
+
+                        .sasslogo {
+                            background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 70px;
+                            width: 70px;
+                        }
 
 
-
-                .logos__three {
-                    display: flex;
-                    justify-content: space-around;
-                    width: 100%;
-                    margin: 5px;
-
-
-                    .csslogo {
-                        background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        height: 70px;
-                        width: 70px;
+                        .git {
+                            background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 70px;
+                            width: 70px;
+                        }
                     }
 
-                    .sasslogo {
-                        background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        height: 70px;
-                        width: 70px;
+
+
+                    .logos__three {
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
+                        margin: 5px;
+
+
+                        .csslogo {
+                            background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 70px;
+                            width: 70px;
+                        }
+
+
+
+                        .jscript {
+                            background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 70px;
+                            width: 70px;
+                        }
+
+
+                        .jquerylogo {
+                            background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            width: 100px;
+                            height: 70px;
+                        }
                     }
 
-                    .jquerylogo {
-                        background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 100px;
-                        height: 70px;
-                    }
-                }
+
+                    .logos__two_two {
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
+                        margin: 5px;
 
 
-                .logos__two_two {
-                    display: flex;
-                    justify-content: space-around;
-                    width: 100%;
-                    margin: 5px;
+                        .reactlogo {
+                            background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 70px;
+                            width: 70px;
+                        }
 
-
-                    .reactlogo {
-                        background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        height: 70px;
-                        width: 70px;
-                    }
-
-                    .nodelogo {
-                        background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        height: 70px;
-                        width: 70px;
+                        .nodelogo {
+                            background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 70px;
+                            width: 70px;
+                        }
                     }
                 }
             }
+
 
 
         }

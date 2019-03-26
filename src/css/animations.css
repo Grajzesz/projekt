@@ -66,6 +66,38 @@
   }
 }
 
+@-webkit-keyframes spider_left {
+  0% {
+    left: -70px;
+  }
+  100% {
+    right: 70px;
+  }
+}
+
+@keyframes spider_left {
+  0% {
+    left: -70px;
+  }
+  100% {
+    right: 70px;
+  }
+}
+
+@-webkit-keyframes play_spider {
+  100% {
+    background-position: -287px;
+    display: none;
+  }
+}
+
+@keyframes play_spider {
+  100% {
+    background-position: -287px;
+    display: none;
+  }
+}
+
 @-webkit-keyframes typing {
   0% {
     display: none;
@@ -128,25 +160,81 @@
   }
 }
 
+.html,
+.jscript,
+.git,
+.csslogo,
+.sasslogo,
+.jquerylogo,
+.reactlogo,
+.nodelogo {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.html:hover,
+.jscript:hover,
+.git:hover,
+.csslogo:hover,
+.sasslogo:hover,
+.jquerylogo:hover,
+.reactlogo:hover,
+.nodelogo:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
 @-webkit-keyframes shake {
-  from {
-    -webkit-transform: skewX(10px);
-            transform: skewX(10px);
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
   }
-  to {
-    -webkit-transform: skewY(10px);
-            transform: skewY(10px);
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
   }
 }
 
 @keyframes shake {
-  from {
-    -webkit-transform: skewX(10px);
-            transform: skewX(10px);
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
   }
-  to {
-    -webkit-transform: skewY(10px);
-            transform: skewY(10px);
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
   }
 }
 /*# sourceMappingURL=animations.css.map */
