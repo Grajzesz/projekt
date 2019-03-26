@@ -12,114 +12,129 @@
     height: 100%;
     width: 80%;
 
-    .lorem {
+    .main__lorem {
         font-family: 'Montserrat', sans-serif;
         margin: 10% 0;
         width: 100%;
-        
+
+
         position: absolute;
-        display: block;
+        // display: block;
         top: 150px;
         font-size: 1.5em;
-    }
 
-    .logos__container {
-        width: 50%;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        .html {
-            background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
-            background-size: contain;
-            background-position: center;
-            height: 70px;
-            width: 70px;
-        }
-
-        .logos__two {
+        .main__portfolio {
+            margin: 5% 0 25% 0;
+            margin: 0 auto;
             display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin: 5px;
+            width: 80%;
+            flex-direction: column;
+            justify-content: center;
 
-            .jscript {
-                background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
-                background-size: contain;
-                background-position: center;
-                height: 70px;
-                width: 70px;
+            .logos__container {
+
+                margin-top: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .html {
+                    background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    height: 70px;
+                    width: 70px;
+                    animation: shake infinite linear;
+                }
+
+                .logos__two {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    margin: 5px;
+
+                    .jscript {
+                        background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        height: 70px;
+                        width: 70px;
+                    }
+
+                    .git {
+                        background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        height: 70px;
+                        width: 70px;
+                    }
+                }
+
+
+
+                .logos__three {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    margin: 5px;
+
+
+                    .csslogo {
+                        background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        height: 70px;
+                        width: 70px;
+                    }
+
+                    .sasslogo {
+                        background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        height: 70px;
+                        width: 70px;
+                    }
+
+                    .jquerylogo {
+                        background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 100px;
+                        height: 70px;
+                    }
+                }
+
+
+                .logos__two_two {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    margin: 5px;
+
+
+                    .reactlogo {
+                        background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        height: 70px;
+                        width: 70px;
+                    }
+
+                    .nodelogo {
+                        background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        height: 70px;
+                        width: 70px;
+                    }
+                }
             }
 
-            .git {
-                background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
-                background-size: contain;
-                background-position: center;
-                height: 70px;
-                width: 70px;
-            }
+
         }
 
 
-
-        .logos__three {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin: 5px;
-
-
-            .csslogo {
-                background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
-                background-size: contain;
-                background-position: center;
-                height: 70px;
-                width: 70px;
-            }
-
-            .sasslogo {
-                background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
-                background-size: contain;
-                background-position: center;
-                height: 70px;
-                width: 70px;
-            }
-
-            .jquerylogo {
-                background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
-                background-size: contain;
-                background-position: center;
-                width: 100px;
-                height: 70px;
-            }
-        }
-
-
-        .logos__two_two {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin: 5px;
-
-
-            .reactlogo {
-                background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
-                background-size: contain;
-                background-position: center;
-                height: 70px;
-                width: 70px;
-            }
-
-            .nodelogo {
-                background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
-                background-size: contain;
-                background-position: center;
-                height: 70px;
-                width: 70px;
-            }
-        }
 
 
     }

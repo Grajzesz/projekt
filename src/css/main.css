@@ -493,6 +493,28 @@ a {
   }
 }
 
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: skewX(10px);
+            transform: skewX(10px);
+  }
+  to {
+    -webkit-transform: skewY(10px);
+            transform: skewY(10px);
+  }
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: skewX(10px);
+            transform: skewX(10px);
+  }
+  to {
+    -webkit-transform: skewY(10px);
+            transform: skewY(10px);
+  }
+}
+
 .show__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,18 +531,33 @@ a {
   width: 80%;
 }
 
-.show__content .lorem {
+.show__content .main__lorem {
   font-family: 'Montserrat', sans-serif;
   margin: 10% 0;
   width: 100%;
   position: absolute;
-  display: block;
   top: 150px;
   font-size: 1.5em;
 }
 
-.show__content .logos__container {
-  width: 50%;
+.show__content .main__lorem .main__portfolio {
+  margin: 5% 0 25% 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.show__content .main__lorem .main__portfolio .logos__container {
+  margin-top: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,15 +573,17 @@ a {
           align-items: center;
 }
 
-.show__content .logos__container .html {
+.show__content .main__lorem .main__portfolio .logos__container .html {
   background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
   height: 70px;
   width: 70px;
+  -webkit-animation: shake infinite linear;
+          animation: shake infinite linear;
 }
 
-.show__content .logos__container .logos__two {
+.show__content .main__lorem .main__portfolio .logos__container .logos__two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,7 +593,7 @@ a {
   margin: 5px;
 }
 
-.show__content .logos__container .logos__two .jscript {
+.show__content .main__lorem .main__portfolio .logos__container .logos__two .jscript {
   background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -562,7 +601,7 @@ a {
   width: 70px;
 }
 
-.show__content .logos__container .logos__two .git {
+.show__content .main__lorem .main__portfolio .logos__container .logos__two .git {
   background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -570,7 +609,7 @@ a {
   width: 70px;
 }
 
-.show__content .logos__container .logos__three {
+.show__content .main__lorem .main__portfolio .logos__container .logos__three {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,7 +619,7 @@ a {
   margin: 5px;
 }
 
-.show__content .logos__container .logos__three .csslogo {
+.show__content .main__lorem .main__portfolio .logos__container .logos__three .csslogo {
   background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -588,7 +627,7 @@ a {
   width: 70px;
 }
 
-.show__content .logos__container .logos__three .sasslogo {
+.show__content .main__lorem .main__portfolio .logos__container .logos__three .sasslogo {
   background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -596,7 +635,7 @@ a {
   width: 70px;
 }
 
-.show__content .logos__container .logos__three .jquerylogo {
+.show__content .main__lorem .main__portfolio .logos__container .logos__three .jquerylogo {
   background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -604,7 +643,7 @@ a {
   height: 70px;
 }
 
-.show__content .logos__container .logos__two_two {
+.show__content .main__lorem .main__portfolio .logos__container .logos__two_two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,7 +653,7 @@ a {
   margin: 5px;
 }
 
-.show__content .logos__container .logos__two_two .reactlogo {
+.show__content .main__lorem .main__portfolio .logos__container .logos__two_two .reactlogo {
   background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -622,7 +661,7 @@ a {
   width: 70px;
 }
 
-.show__content .logos__container .logos__two_two .nodelogo {
+.show__content .main__lorem .main__portfolio .logos__container .logos__two_two .nodelogo {
   background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
   background-size: contain;
   background-position: center;

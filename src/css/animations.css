@@ -127,4 +127,26 @@
     border-color: orange;
   }
 }
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: skewX(10px);
+            transform: skewX(10px);
+  }
+  to {
+    -webkit-transform: skewY(10px);
+            transform: skewY(10px);
+  }
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: skewX(10px);
+            transform: skewX(10px);
+  }
+  to {
+    -webkit-transform: skewY(10px);
+            transform: skewY(10px);
+  }
+}
 /*# sourceMappingURL=animations.css.map */

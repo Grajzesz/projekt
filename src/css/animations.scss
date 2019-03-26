@@ -74,3 +74,13 @@
         border-color: orange
     }
 }
+
+@keyframes shake {
+    from {
+        transform: skewX(10px)
+    }
+
+    to {
+        transform: skewY(10px)
+    }
+}
