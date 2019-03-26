@@ -190,12 +190,12 @@ a {
 .navigation .navigation__signature {
   margin-left: 10px;
   font-family: 'Clicker Script', cursive;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #aa0063;
 }
 
 .navigation .navigation__list {
-  width: 60%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,7 +240,6 @@ a {
   background-position: center;
   height: 100vh;
   width: 100%;
-  position: fixed;
 }
 
 @media (max-width: 600px) {
@@ -268,6 +267,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* DEMO-SPECIFIC STYLES */
+  /* The typing effect */
 }
 
 @media (max-width: 700px) {
@@ -287,36 +288,17 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  /* DEMO-SPECIFIC STYLES */
-  /* The typing effect */
-  /* The typewriter cursor effect */
 }
 
-.container2 .main_background .show__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-  height: 100%;
-  width: 90%;
-}
-
-.container2 .main_background .show__content .monster__container {
-  width: 46.66667px;
-  height: 57.66667px;
+.container2 .main_background .monster__container {
+  width: 70px;
+  height: 86.5px;
   position: absolute;
-  top: 20px;
+  top: 35px;
   left: -100px;
 }
 
-.container2 .main_background .show__content .monster__container .monster {
+.container2 .main_background .monster__container .monster {
   top: 20px;
   left: 1600px;
   position: absolute;
@@ -325,33 +307,24 @@ a {
   margin: 2% auto;
   background: url(../img/spritesheet.png) left;
   background-size: cover;
-  -webkit-animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1s;
-          animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1s;
+  -webkit-animation: play 0.4s steps(4) infinite, sonic_left 1.5s linear 1s;
+          animation: play 0.4s steps(4) infinite, sonic_left 1.5s linear 1s;
 }
 
 @media (max-width: 700px) {
-  .container2 .main_background .show__content .monster__container .monster {
-    -webkit-animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1.6s;
-            animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1.6s;
+  .container2 .main_background .monster__container .monster {
+    -webkit-animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
+            animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
   }
 }
 
-.container2 .main_background .show__content .lorem {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  display: block;
-  top: 150px;
-}
-
-.container2 .main_background .typewriter {
+.container2 .typewriter {
   position: absolute;
   top: 70px;
 }
 
-.container2 .main_background .typewriter h1 {
+.container2 .typewriter h1 {
+  font-size: 3em;
   top: 20px;
   color: black;
   font-family: monospace;
@@ -369,45 +342,9 @@ a {
           animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
 }
 
-@-webkit-keyframes typing {
-  0% {
-    display: none;
-    visibility: visible;
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing {
-  0% {
-    display: none;
-    visibility: visible;
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
+@media (max-width: 700px) {
+  .container2 .typewriter h1 {
+    font-size: 2em;
   }
 }
 
@@ -426,13 +363,13 @@ a {
 
 @-webkit-keyframes play {
   100% {
-    background-position: -191.33333px;
+    background-position: -287px;
   }
 }
 
 @keyframes play {
   100% {
-    background-position: -191.33333px;
+    background-position: -287px;
   }
 }
 
@@ -488,5 +425,164 @@ a {
   100% {
     right: 70px;
   }
+}
+
+@-webkit-keyframes typing {
+  0% {
+    display: none;
+    visibility: visible;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    display: none;
+    visibility: visible;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@-webkit-keyframes blinkey-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes blinkey-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.show__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+}
+
+.show__content .lorem {
+  font-family: 'Montserrat', sans-serif;
+  margin: 10% 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  display: block;
+  top: 150px;
+  font-size: 1.5em;
+}
+
+.show__content .logos__container {
+  width: 50%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.show__content .logos__container .html {
+  background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.show__content .logos__container .jscript {
+  background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.show__content .logos__container .git {
+  background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.show__content .logos__container .csslogo {
+  background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.show__content .logos__container .sasslogo {
+  background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.show__content .logos__container .jquerylogo {
+  background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.show__content .logos__container .reactlogo {
+  background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.show__content .logos__container .nodelogo {
+  background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
 }
 /*# sourceMappingURL=main.css.map */

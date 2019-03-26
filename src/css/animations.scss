@@ -1,0 +1,76 @@
+@keyframes play {
+    100% {
+        background-position: (-574px/2);
+        display: none;
+    }
+}
+
+@keyframes button_change {
+    0% {
+        color: #DC3A3C;
+    }
+
+    50% {
+        color: #fff;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sonic_left {
+    0% {
+        left: -70px;
+    }
+
+    100% {
+        right: 70px;
+    }
+}
+
+@keyframes typing {
+    0% {
+        display: none;
+        visibility: visible;
+        width: 0
+    }
+
+    to {
+        width: 100%;
+
+
+
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+@keyframes blinkey-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}

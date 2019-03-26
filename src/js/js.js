@@ -19,7 +19,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $('.typewriter').css('display', 'block');
             $('.baba').css('visibility', 'visible');
-        }, 2000);
+        }, 1600);
         $('#menuToggle').on('click', function() {
             $('.baba').toggle();
         });

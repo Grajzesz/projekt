@@ -1,196 +1,95 @@
 @import "nav.scss";
+@import "containers.scss";
 
-.container {
-    min-width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    height: 100vh;
-    background: url(../img/367a5bbd4ace61ce07886a007c7ff2e3.gif) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
+@import "animations.scss";
 
-    @media (max-width: 600px) {
-        max-width: 100%;
-        font-size: 0.8em;
-    }
-}
-
-.container2 {
-    min-width: 100%;
-    margin: 0 auto;
-    min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    height: 100vh;
-    width: 100%;
+.show__content {
     display: flex;
+    // justify-content: center;
+    align-items: center;
     flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
 
-    @media (max-width: 700px) {
-        max-width: 100%;
-        font-size: 0.8em;
-    }
-
-
-
-    .main_background {
-        height: 100%;
+    .lorem {
+        font-family: 'Montserrat', sans-serif;
+        margin: 10% 0;
         width: 100%;
         display: flex;
-        // align-items: center;
-        justify-content: center;
         position: relative;
+        display: block;
+        top: 150px;
+        font-size: 1.5em;
+    }
 
-        .show__content {
-            display: flex;
-            // justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 0 auto;
-            height: 100%;
-            width: 90%;
+    .logos__container {
+        width: 50%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
 
-            .monster__container {
-                width: (140px/3);
-                height: (173px/3);
-                position: absolute;
-                top: 20px;
-                left: -100px; // animation: sonic_left 1s linear;
-
-                .monster {
-                    top: 20px;
-                    left: 1600px;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    margin: 2% auto;
-                    background: url(../img/spritesheet.png) left;
-                    background-size: cover;
-                    animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1s;
-
-                    @media (max-width: 700px) {
-                        animation: play 0.4s steps(4) infinite, sonic_left 3s linear 1.6s;
-                    }
-                }
-            }
-
-            .lorem {
-                width: 100%;
-                display: flex;
-                position: relative;
-                display: block;
-                top: 150px;
-            }
+        .html {
+            background: url(../img/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
         }
 
-        /* DEMO-SPECIFIC STYLES */
-        .typewriter {
-            position: absolute;
-            top: 70px;
+        .logos__two {}
 
-            h1 {
-                top: 20px;
-                color: rgb(0, 0, 0);
-                font-family: monospace;
-                overflow: hidden;
-                // display: none;
-                visibility: hidden;
-                /* Ensures the content is not revealed until the animation */
-                border-right: .15em solid orange;
-                /* The typwriter cursor */
-                white-space: nowrap;
-                /* Keeps the content on a single line */
-                // margin: 0 auto;
-                /* Gives that scrolling effect as the typing happens */
-                letter-spacing: .15em;
-                /* Adjust as needed */
-                animation:
-                    typing .5s steps(30, end),
-                    blink-caret .5s step-end;
-                // animation-delay: 1s;
-            }
+        .jscript {
+            background: url(../img/javascript-js-logo-2949701702-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
         }
 
-        /* The typing effect */
-        @keyframes typing {
-            0% {
-                display: none;
-                visibility: visible;
-                width: 0
-            }
-
-            to {
-                width: 100%;
-
-
-
-            }
+        .git {
+            background: url(../img/git-logo-CD8D6F1C09-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
         }
 
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
+        .logos__three {}
 
-            from,
-            to {
-                border-color: transparent
-            }
+        .csslogo {
+            background: url(../img/css3-logo-8724075274-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
+        }
 
-            50% {
-                border-color: orange
-            }
+        .sasslogo {
+            background: url(../img/sass-logo-EFE1469B2C-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
+        }
+
+        .jquerylogo {
+            background: url(../img/jquery-logo-BD35C03823-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
+        }
+
+        .logos__two_two {}
+
+        .reactlogo {
+            background: url(../img/react-logo-7B3CE81517-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
+        }
+
+        .nodelogo {
+            background: url(../img/nodejs-logo-065257DE24-seeklogo.com.png) no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 100px;
         }
     }
 
-}
-
-.toggle__button {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, 50%);
-    font-family: 'Press Start 2P', cursive;
-    color: #fff;
-    animation: button_change infinite alternate 1.3s;
-    cursor: pointer; // align-self: center;
-}
-
-@keyframes play {
-    100% {
-        background-position: (-574px/3);
-    }
-}
-
-@keyframes button_change {
-    0% {
-        color: #DC3A3C;
-    }
-
-    50% {
-        color: #fff;
-    }
-}
-
-@keyframes fadeout {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes sonic_left {
-    0% {
-        left: -70px;
-    }
-
-    100% {
-        right: 70px;
-    }
 }

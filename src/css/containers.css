@@ -1,0 +1,131 @@
+.container {
+  min-width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+  background: url(../img/367a5bbd4ace61ce07886a007c7ff2e3.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    font-size: 0.8em;
+  }
+}
+
+.container2 {
+  min-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.849)), to(rgba(255, 255, 255, 0.894))), url(../img/stop.png) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* DEMO-SPECIFIC STYLES */
+  /* The typing effect */
+}
+
+@media (max-width: 700px) {
+  .container2 {
+    max-width: 100%;
+    font-size: 0.8em;
+  }
+}
+
+.container2 .main_background {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.container2 .main_background .monster__container {
+  width: 70px;
+  height: 86.5px;
+  position: absolute;
+  top: 35px;
+  left: -100px;
+}
+
+.container2 .main_background .monster__container .monster {
+  top: 20px;
+  left: 1600px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 2% auto;
+  background: url(../img/spritesheet.png) left;
+  background-size: cover;
+  -webkit-animation: play 0.4s steps(4) infinite, sonic_left 1.5s linear 1s;
+          animation: play 0.4s steps(4) infinite, sonic_left 1.5s linear 1s;
+}
+
+@media (max-width: 700px) {
+  .container2 .main_background .monster__container .monster {
+    -webkit-animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
+            animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
+  }
+}
+
+.container2 .typewriter {
+  position: absolute;
+  top: 70px;
+}
+
+.container2 .typewriter h1 {
+  font-size: 3em;
+  top: 20px;
+  color: black;
+  font-family: monospace;
+  overflow: hidden;
+  visibility: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
+          animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end;
+}
+
+@media (max-width: 700px) {
+  .container2 .typewriter h1 {
+    font-size: 2em;
+  }
+}
+
+.toggle__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  -webkit-animation: button_change infinite alternate 1.3s;
+          animation: button_change infinite alternate 1.3s;
+  cursor: pointer;
+}
+/*# sourceMappingURL=containers.css.map */

@@ -191,8 +191,9 @@ a {
     .navigation__signature {
         margin-left: 10px;
         font-family: 'Clicker Script', cursive;
-        font-size: 1.5em;
+        font-size: 1.7em;
         color: #aa0063;
+        // justify-content: flex-start;
     }
 
     .navigation__list {
@@ -201,7 +202,7 @@ a {
             font-size: 0.8em;
         }
 
-        width: 60%;
+        width: 50%;
         display: flex;
         justify-content: space-around;
         align-items: center;

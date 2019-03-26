@@ -1,0 +1,130 @@
+@-webkit-keyframes play {
+  100% {
+    background-position: -287px;
+    display: none;
+  }
+}
+
+@keyframes play {
+  100% {
+    background-position: -287px;
+    display: none;
+  }
+}
+
+@-webkit-keyframes button_change {
+  0% {
+    color: #DC3A3C;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@keyframes button_change {
+  0% {
+    color: #DC3A3C;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes sonic_left {
+  0% {
+    left: -70px;
+  }
+  100% {
+    right: 70px;
+  }
+}
+
+@keyframes sonic_left {
+  0% {
+    left: -70px;
+  }
+  100% {
+    right: 70px;
+  }
+}
+
+@-webkit-keyframes typing {
+  0% {
+    display: none;
+    visibility: visible;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    display: none;
+    visibility: visible;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@-webkit-keyframes blinkey-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes blinkey-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+/*# sourceMappingURL=animations.css.map */
