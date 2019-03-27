@@ -348,6 +348,7 @@ a {
 }
 
 .typewriter h1 {
+  margin-top: 40px;
   font-size: 3em;
   top: 20px;
   color: black;
@@ -737,8 +738,8 @@ a {
 
 .show__content .main__lorem .main__portfolio .logos__background {
   height: 400px;
-  margin-top: 40%;
-  margin-bottom: 15%;
+  margin-top: 350px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,6 +757,12 @@ a {
   background: url(../img/Spider-Web-PNG-File.png) no-repeat center;
   background-size: cover;
   position: relative;
+}
+
+@media (max-width: 400px) {
+  .show__content .main__lorem .main__portfolio .logos__background {
+    margin-top: 180px;
+  }
 }
 
 .show__content .main__lorem .main__portfolio .logos__background .line1 {
@@ -985,6 +992,12 @@ a {
   font-family: 'Petit Formal Script', cursive;
 }
 
+@media (max-width: 500px) {
+  .show__content .main__lorem .main__portfolio .quote__background .quote__api {
+    font-size: 0.6em;
+  }
+}
+
 .show__content .main__lorem .main__portfolio .quote__background .quote__api h3 {
   margin-top: 10px;
   text-align: right;
@@ -1017,6 +1030,15 @@ a {
   height: 1px;
   width: 37%;
   background-color: #000;
+}
+
+.show__content .main__lorem .main__portfolio .main__projects .project__title .line4 {
+  position: absolute;
+  left: 6px;
+  height: 152%;
+  width: 1px;
+  background-color: #000;
+  top: -141%;
 }
 
 .show__content .main__lorem .main__portfolio .main__projects .project__title .line7 {
