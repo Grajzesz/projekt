@@ -677,6 +677,11 @@ a {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .show__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,7 +700,7 @@ a {
 
 .show__content .main__lorem {
   font-family: 'Montserrat', sans-serif;
-  margin: 10% 0;
+  margin: 10% 0 0 0;
   width: 100%;
   position: absolute;
   top: 150px;
@@ -723,7 +728,7 @@ a {
 
 .show__content .main__lorem .main__portfolio .logos__background {
   height: 400px;
-  margin-top: 300px;
+  margin-top: 350px;
   margin-bottom: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -947,5 +952,54 @@ a {
   background-position: center;
   height: 70px;
   width: 70px;
+}
+
+.show__content .main__lorem .main__portfolio .quote__background {
+  margin: 10% 0;
+  width: 98vw;
+  height: 270px;
+  background-color: #aa0063a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.show__content .main__lorem .main__portfolio .quote__background .quote__api {
+  width: 80%;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.show__content .main__lorem .main__portfolio .quote__background .quote__api h3 {
+  margin-top: 10px;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+.show__content .main__lorem .footer__container {
+  height: auto;
+  width: 100%;
+  background-color: #000;
+  color: white;
+}
+
+.show__content .main__lorem .footer__container .footer__container-inner {
+  height: 100%;
+  width: 80%;
+  padding: 5%;
+}
+
+.show__content .main__lorem .footer__container .footer__container-inner li {
+  font-family: 'Press Start 2P', cursive;
+  padding: 2%;
+  font-size: 0.6em;
 }
 /*# sourceMappingURL=main.css.map */

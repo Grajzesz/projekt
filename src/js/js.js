@@ -27,7 +27,20 @@ $(document).ready(function() {
         $('#menuToggle').on('click', function() {
             $('.baba').toggle();
         });
+        $(document).ready(() => {
+            const url = 'http://quotes.stormconsultancy.co.uk/random.json';
+            const film = $('.quote__api');
+            $(document).ready(() => {
+                $.ajax({ url: url }).done(response => {
+                    // response.forEach(function(e) {
+                    console.log(response);
 
+                    $(film).append(`<h2>" ${response.quote} "</h2>`);
+                    $(film).append(`<h3>${response.author}</h3>`);
+                    // });
+                });
+            });
+        });
         // $('#menuToggle').toggle(".baba").css('visibility', 'hidden');
         // $('.baba').css('visibility', 'visible');
     });
