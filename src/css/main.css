@@ -176,7 +176,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 @media (max-width: 700px) {
@@ -189,8 +189,18 @@ a {
 .navigation .navigation__signature {
   margin-left: 10px;
   font-family: 'Clicker Script', cursive;
-  font-size: 1.7em;
+  font-size: 2em;
   color: #aa0063;
+}
+
+.navigation .navigation__signature h1 {
+  font-size: 2.2em;
+}
+
+.navigation .navigation__signature p {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 0.3em;
 }
 
 .navigation .navigation__list {
@@ -838,8 +848,7 @@ a {
 
 @media (max-width: 700px) {
   .show__content .main__lorem .main__portfolio .logos__background .monster__spider_container .monster__spider {
-    -webkit-animation: play_spider 0.4s steps(7) infinite, spider_left 30s linear infinite;
-            animation: play_spider 0.4s steps(7) infinite, spider_left 30s linear infinite;
+    display: none;
   }
 }
 
@@ -955,7 +964,7 @@ a {
 }
 
 .show__content .main__lorem .main__portfolio .quote__background {
-  margin: 10% 0;
+  margin: 10% 0 0 0;
   width: 98vw;
   height: 270px;
   background-color: #aa0063a1;
@@ -984,6 +993,34 @@ a {
   font-style: normal;
 }
 
+.show__content .main__lorem .main__portfolio .main__projects {
+  width: 98vw;
+  height: 300px;
+}
+
+.show__content .main__lorem .main__portfolio .main__projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.show__content .main__lorem .main__portfolio .project1 {
+  background: url(../img/projekt1.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.show__content .main__lorem .main__portfolio .project2 {
+  background: url(../img/projekt1.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
 .show__content .main__lorem .footer__container {
   height: auto;
   width: 100%;
@@ -994,12 +1031,12 @@ a {
 .show__content .main__lorem .footer__container .footer__container-inner {
   height: 100%;
   width: 80%;
-  padding: 5%;
+  padding: 3%;
 }
 
 .show__content .main__lorem .footer__container .footer__container-inner li {
   font-family: 'Press Start 2P', cursive;
-  padding: 2%;
-  font-size: 0.6em;
+  padding: 1%;
+  font-size: 0.4em;
 }
 /*# sourceMappingURL=main.css.map */

@@ -186,14 +186,25 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 0.6em;
 
     .navigation__signature {
         margin-left: 10px;
         font-family: 'Clicker Script', cursive;
-        font-size: 1.7em;
+        font-size: 2em;
         color: #aa0063;
+
         // justify-content: flex-start;
+        h1 {
+            font-size: 2.2em;
+        }
+
+        p {
+            font-family: 'Press Start 2P',
+                cursive;
+            color: white;
+            font-size: 0.3em;
+        }
     }
 
     .navigation__list {

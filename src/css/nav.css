@@ -176,7 +176,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 @media (max-width: 700px) {
@@ -189,8 +189,18 @@ a {
 .navigation .navigation__signature {
   margin-left: 10px;
   font-family: 'Clicker Script', cursive;
-  font-size: 1.7em;
+  font-size: 2em;
   color: #aa0063;
+}
+
+.navigation .navigation__signature h1 {
+  font-size: 2.2em;
+}
+
+.navigation .navigation__signature p {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 0.3em;
 }
 
 .navigation .navigation__list {
