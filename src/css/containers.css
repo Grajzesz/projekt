@@ -19,10 +19,23 @@
   }
 }
 
+.container .toggle__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  -webkit-animation: button_change infinite alternate 1.3s;
+          animation: button_change infinite alternate 1.3s;
+  cursor: pointer;
+}
+
 .container2 {
   min-width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 550px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.849)), to(rgba(255, 255, 255, 0.894))), url(../img/stop.png) no-repeat;
   background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
   background-size: cover;
@@ -38,7 +51,6 @@
           flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  /* DEMO-SPECIFIC STYLES */
   /* The typing effect */
 }
 
@@ -49,7 +61,7 @@
   }
 }
 
-.container2 .main_background {
+.main_background {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -58,10 +70,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
-.container2 .main_background .monster__container {
+.main_background .monster__container {
   width: 70px;
   height: 86.5px;
   position: absolute;
@@ -69,7 +80,7 @@
   left: -50px;
 }
 
-.container2 .main_background .monster__container .monster {
+.main_background .monster__container .monster {
   top: 20px;
   left: 1600px;
   position: absolute;
@@ -83,18 +94,20 @@
 }
 
 @media (max-width: 700px) {
-  .container2 .main_background .monster__container .monster {
+  .main_background .monster__container .monster {
     -webkit-animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
             animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
   }
 }
 
-.container2 .typewriter {
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
   position: absolute;
   top: 70px;
 }
 
-.container2 .typewriter h1 {
+.typewriter h1 {
+  margin-top: 40px;
   font-size: 3em;
   top: 20px;
   color: black;
@@ -114,21 +127,8 @@
 }
 
 @media (max-width: 700px) {
-  .container2 .typewriter h1 {
+  .typewriter h1 {
     font-size: 2em;
   }
-}
-
-.toggle__button {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
-  font-family: 'Press Start 2P', cursive;
-  color: #fff;
-  -webkit-animation: button_change infinite alternate 1.3s;
-          animation: button_change infinite alternate 1.3s;
-  cursor: pointer;
 }
 /*# sourceMappingURL=containers.css.map */

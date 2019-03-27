@@ -39,8 +39,8 @@ $bgColor: #aa0063;
 
             .logos__background {
                 height: 400px;
-                margin-top: 350px;
-                margin-bottom: 10%;
+                margin-top: 40%;
+                margin-bottom: 15%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -280,6 +280,48 @@ $bgColor: #aa0063;
                 width: 98vw;
                 height: 300px;
 
+                .project__title {
+                    text-align: center;
+                    margin: 10%;
+                    position: relative;
+
+                    h2 {}
+
+
+                    .line1 {
+                        position: absolute;
+                        top: -20px;
+                        height: 1px;
+                        width: 17%;
+                        background-color: #000;
+                    }
+
+                    .line2 {
+                        position: absolute;
+                        top: -30px;
+                        height: 1px;
+                        width: 37%;
+                        background-color: #000;
+                    }
+
+                    .line7 {
+                        bottom: -7%;
+                        position: absolute;
+                        right: -14px;
+                        height: 1px;
+                        width: 30%;
+                        background-color: #000;
+                    }
+
+                    .line8 {
+                        bottom: -27%;
+                        position: absolute;
+                        right: -10px;
+                        height: 114%;
+                        width: 1px;
+                        background-color: #000;
+                    }
+                }
             }
 
             .main__projects-container {
@@ -290,7 +332,7 @@ $bgColor: #aa0063;
             .project1 {
                 background: url(../img/projekt1.png) no-repeat;
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
                 height: 100%;
                 width: 100%;
             }
@@ -298,14 +340,20 @@ $bgColor: #aa0063;
             .project2 {
                 background: url(../img/projekt1.png) no-repeat;
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
                 height: 100%;
                 width: 100%;
             }
 
-            .project3 {}
+            .project3 {
+                background: url(../img/projekt1.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+            }
 
-            .project4 {}
+
 
 
         }

@@ -260,10 +260,23 @@ a {
   }
 }
 
+.container .toggle__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  -webkit-animation: button_change infinite alternate 1.3s;
+          animation: button_change infinite alternate 1.3s;
+  cursor: pointer;
+}
+
 .container2 {
   min-width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 550px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.849)), to(rgba(255, 255, 255, 0.894))), url(../img/stop.png) no-repeat;
   background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.894)), url(../img/stop.png) no-repeat;
   background-size: cover;
@@ -279,7 +292,6 @@ a {
           flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  /* DEMO-SPECIFIC STYLES */
   /* The typing effect */
 }
 
@@ -290,7 +302,7 @@ a {
   }
 }
 
-.container2 .main_background {
+.main_background {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -299,10 +311,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
-.container2 .main_background .monster__container {
+.main_background .monster__container {
   width: 70px;
   height: 86.5px;
   position: absolute;
@@ -310,7 +321,7 @@ a {
   left: -50px;
 }
 
-.container2 .main_background .monster__container .monster {
+.main_background .monster__container .monster {
   top: 20px;
   left: 1600px;
   position: absolute;
@@ -324,18 +335,19 @@ a {
 }
 
 @media (max-width: 700px) {
-  .container2 .main_background .monster__container .monster {
+  .main_background .monster__container .monster {
     -webkit-animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
             animation: play 0.4s steps(4) infinite, sonic_left 2s linear 1.3s;
   }
 }
 
-.container2 .typewriter {
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
   position: absolute;
   top: 70px;
 }
 
-.container2 .typewriter h1 {
+.typewriter h1 {
   font-size: 3em;
   top: 20px;
   color: black;
@@ -355,22 +367,9 @@ a {
 }
 
 @media (max-width: 700px) {
-  .container2 .typewriter h1 {
+  .typewriter h1 {
     font-size: 2em;
   }
-}
-
-.toggle__button {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
-  font-family: 'Press Start 2P', cursive;
-  color: #fff;
-  -webkit-animation: button_change infinite alternate 1.3s;
-          animation: button_change infinite alternate 1.3s;
-  cursor: pointer;
 }
 
 @-webkit-keyframes play {
@@ -738,8 +737,8 @@ a {
 
 .show__content .main__lorem .main__portfolio .logos__background {
   height: 400px;
-  margin-top: 350px;
-  margin-bottom: 10%;
+  margin-top: 40%;
+  margin-bottom: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,6 +997,46 @@ a {
   height: 300px;
 }
 
+.show__content .main__lorem .main__portfolio .main__projects .project__title {
+  text-align: center;
+  margin: 10%;
+  position: relative;
+}
+
+.show__content .main__lorem .main__portfolio .main__projects .project__title .line1 {
+  position: absolute;
+  top: -20px;
+  height: 1px;
+  width: 17%;
+  background-color: #000;
+}
+
+.show__content .main__lorem .main__portfolio .main__projects .project__title .line2 {
+  position: absolute;
+  top: -30px;
+  height: 1px;
+  width: 37%;
+  background-color: #000;
+}
+
+.show__content .main__lorem .main__portfolio .main__projects .project__title .line7 {
+  bottom: -7%;
+  position: absolute;
+  right: -14px;
+  height: 1px;
+  width: 30%;
+  background-color: #000;
+}
+
+.show__content .main__lorem .main__portfolio .main__projects .project__title .line8 {
+  bottom: -27%;
+  position: absolute;
+  right: -10px;
+  height: 114%;
+  width: 1px;
+  background-color: #000;
+}
+
 .show__content .main__lorem .main__portfolio .main__projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,7 +1047,7 @@ a {
 .show__content .main__lorem .main__portfolio .project1 {
   background: url(../img/projekt1.png) no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -1016,7 +1055,15 @@ a {
 .show__content .main__lorem .main__portfolio .project2 {
   background: url(../img/projekt1.png) no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.show__content .main__lorem .main__portfolio .project3 {
+  background: url(../img/projekt1.png) no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
