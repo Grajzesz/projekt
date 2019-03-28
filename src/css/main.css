@@ -1069,6 +1069,13 @@ a {
   background: #aa0063a1;
 }
 
+@media (max-width: 600px) {
+  .show__content .main__lorem .main__portfolio .main__projects-container {
+    height: 150px;
+    font-size: 0.6em;
+  }
+}
+
 .show__content .main__lorem .main__portfolio .project1 {
   background: url(../img/projekt1.png) no-repeat;
   background-position: center;
