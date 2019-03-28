@@ -29,14 +29,14 @@ $(document).ready(function() {
         });
         $(document).ready(() => {
             const url = 'http://quotes.stormconsultancy.co.uk/random.json';
-            const film = $('.quote__api');
+            const quote = $('.quote__api');
             $(document).ready(() => {
                 $.ajax({ url: url }).done(response => {
                     // response.forEach(function(e) {
-                    console.log(response);
+                    // console.log(response);
 
-                    $(film).append(`<h2>" ${response.quote} "</h2>`);
-                    $(film).append(`<h3>${response.author}</h3>`);
+                    $(quote).append(`<h2>" ${response.quote} "</h2>`);
+                    $(quote).append(`<h3>${response.author}</h3>`);
                     // });
                 });
             });
