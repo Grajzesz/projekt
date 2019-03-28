@@ -30,20 +30,63 @@ function draw() {
     rect(food.x, food.y, scl, scl);
 }
 
+// function keyblock(keye, dire) {
+//     this.keye = keye;
+//     this.dire = dire;
+//     if ((this.dire = true)) {
+//         this.keye;
+//     }
+// }
+
+// function keyPressed() {
+//     if (keyCode === UP_ARROW) {
+//         snake.dir(0, -1);
+
+//         // if (snake.dir(0, -1)) {
+//         //     DOWN_ARROW = false;;
+//     } else if (keyCode === DOWN_ARROW) {
+//          snake.dir(0, 1)
+//             // DOWN_ARROW = false;
+//         }
+//      else if (keyCode === RIGHT_ARROW) {
+//         if (snake.dir(1, 0)) {
+//             DOWN_ARROW = true;
+//         } else {
+//             snake.dir(1, 0);
+//             DOWN_ARROW = true;
+//         }
+//     } else if (keyCode === RIGHT_ARROW) {
+//         DOWN_ARROW = true;
+//     } else if (keyCode === LEFT_ARROW) {
+//         snake.dir(-1, 0);
+//     }
+// }
 function keyPressed() {
-    if (keyCode === UP_ARROW) {
-        snake.dir(0, -1);
-        // if (keyCode === DOWN_ARROW) {
-        //     return false;
-        // }
-    } else if (keyCode === DOWN_ARROW) {
-        snake.dir(0, 1);
-    } else if (keyCode === RIGHT_ARROW) {
-        snake.dir(1, 0);
-        if (keyCode === RIGHT_ARROW) {
-            // DOWN_ARROW= true
+    switch (keyCode) {
+        case LEFT_ARROW://prawo
+          if (snake.dir(1, 0) !==snake.dir(-1, 0)) {
+            snake.dir(1, 0)
         }
-    } else if (keyCode === LEFT_ARROW) {
-        snake.dir(-1, 0);
+        break;
+        case UP_ARROW: //gora
+            if (snake.dir(0, 1) == snake.dir(0, -1)) {
+                snake.dir(0, -1);
+            // } else {
+            //     snake.dir(0, 1);
+            }
+            break;
+          case RIGHT_ARROW://prawo
+          if (snake.dir(-1, 0) !==snake.dir(1, 0)) {
+            snake.dir(-1, 0)
+        }
+        break;
+        case DOWN_ARROW: //dol
+            if (snake.dir(0, -1) == snake.dir(0, 1)) {
+                snake.dir(0, 1);
+            } 
+            // else {
+            //     snake.dir(0, 1);
+            // }
+            break;
     }
 }
