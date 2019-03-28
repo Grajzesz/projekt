@@ -2,10 +2,13 @@ var snake;
 var scl = 20;
 var food;
 
+var snake = document.querySelector('#defaultCanvas0');
+var cont = document.getElementsByClassName('container');
+$(cont).append(canvas);
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(800, 500);
     snake = new Snake();
-    frameRate(10);
+    frameRate(8);
     pickLocation();
 }
 
@@ -17,7 +20,7 @@ function pickLocation() {
 }
 
 function draw() {
-    background(51);
+    background(200);
     snake.dead();
     snake.update();
     snake.show();
@@ -61,32 +64,79 @@ function draw() {
 //         snake.dir(-1, 0);
 //     }
 // }
+const goingUp = (this.y = 1);
+const goingDown = (this.y = -1);
+const goingRight = (this.x = 1);
+const goingLeft = (this.x = -1);
 function keyPressed() {
     switch (keyCode) {
-        case LEFT_ARROW://prawo
-          if (snake.dir(1, 0) !==snake.dir(-1, 0)) {
-            snake.dir(1, 0)
-        }
-        break;
-        case UP_ARROW: //gora
-            if (snake.dir(0, 1) == snake.dir(0, -1)) {
-                snake.dir(0, -1);
-            // } else {
-            //     snake.dir(0, 1);
+        case LEFT_ARROW: //prawo
+            if (LEFT_ARROW) {
+                snake.dir(-1, 0);
             }
+            // else {
+            //     RIGHT_ARROW = false;
+            // }
+            //
             break;
-          case RIGHT_ARROW://prawo
-          if (snake.dir(-1, 0) !==snake.dir(1, 0)) {
-            snake.dir(-1, 0)
-        }
-        break;
+        case UP_ARROW: //gora
+            // RIGHT_ARROW=true
+            if (snake.dir(0, 1) !== snake.dir(0, -1)) {
+                snake.dir(0, -1);
+                // } else {
+                //     snake.dir(0, 1);
+            }
+
+            break;
+
+        case RIGHT_ARROW: //prawo
+            if (snake.dir(-1, 0) === snake.dir(1, 0)) {
+                snake.dir(1, 0);
+            }
+            // } else {
+            //     snake.dir(-1, 0);
+            // }
+            break;
         case DOWN_ARROW: //dol
             if (snake.dir(0, -1) == snake.dir(0, 1)) {
                 snake.dir(0, 1);
-            } 
+            }
             // else {
             //     snake.dir(0, 1);
             // }
             break;
     }
 }
+
+// function changeDirection(event) {
+//     const LEFT_KEY = 37;
+//     const RIGHT_KEY = 39;
+//     const UP_KEY = 38;
+//     const DOWN_KEY = 40;
+
+//     const keyPressed = event.keyCode;
+//     const goingUp = dy === -10;
+//     const goingDown = dy === 10;
+//     const goingRight = dx === 10;
+//     const goingLeft = dx === -10;
+
+//     if (keyPressed === LEFT_KEY && !goingRight) {
+//       dx = -10;
+//       dy = 0;
+//     }
+
+//     if (keyPressed === UP_KEY && !goingDown) {
+//       dx = 0;
+//       dy = -10;
+//     }
+
+//     if (keyPressed === RIGHT_KEY && !goingLeft) {
+//       dx = 10;
+//       dy = 0;
+//     }
+
+//     if (keyPressed === DOWN_KEY && !goingUp) {
+//       dx = 0;
+//       dy = 10;
+//     }
+//   }

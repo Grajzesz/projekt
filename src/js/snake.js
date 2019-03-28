@@ -5,6 +5,7 @@ function Snake() {
     this.yspeed = 0;
     this.total = 0;
     this.tail = [];
+
     this.dir = function(x, y) {
         this.xspeed = x;
         this.yspeed = y;
@@ -13,22 +14,28 @@ function Snake() {
         var isThere = dist(this.x, this.y, pos.x, pos.y);
         if (isThere < 1) {
             this.total++;
+            $('h2').text('Wynik: ' + this.total);
             return true;
         } else {
             return false;
         }
     };
 
-    this.dead =function(){
-        for( var i =0; i<this.tail.length; i++){
+    this.dead = function() {
+        for (var i = 0; i < this.tail.length; i++) {
             var pos = this.tail[i];
-            var d = dist(this.x, this.y, pos.x, pos.y)
-            if( d<1){
-                this.total=0;
-                this.tail =[];
+            var d = dist(this.x, this.y, pos.x, pos.y);
+            if (d < 1) {
+                this.total = 0;
+                this.tail = [];
+                $('h1').text('Bye Snake');
+                this.xspeed = 0;
+                this.yspeed = 0;
+                $(".gameover").text('Game Over');
+                keyPressed() = false
             }
         }
-    }
+    };
     this.update = function() {
         if (this.total === this.tail.length) {
             for (var i = 0; i < this.tail.length - 1; i++) {
@@ -45,7 +52,7 @@ function Snake() {
         this.y = constrain(this.y, 0, height - scl);
     };
     this.show = function() {
-        fill(255)
+        fill(255);
         for (var i = 0; i < this.tail.length; i++) {
             rect(this.tail[i].x, this.tail[i].y, scl, scl);
         }
@@ -54,6 +61,5 @@ function Snake() {
         //     rect(this.tail[i].x, this.tail[i].y, scl, scl);
         // }
         rect(this.x, this.y, scl, scl);
-        
     };
 }

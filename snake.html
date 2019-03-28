@@ -4,10 +4,52 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
+        ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
         <title>Document</title>
     </head>
     <body>
+        <h1 class="gameover"></h1>
+        <div class="container">
+            <div class="wyniki">
+                <h1 style="text-align: right">
+                    Snake by Mariusz with help of The Coding Train
+                </h1>
+                <h2 style="text-align: right">Wynik: 0</h2>
+            </div>
+
+            <style>
+                body {
+                    background: url(./src/img/images.jpg) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .container {
+                    display: flex;
+                }
+                .gameover {
+                    font-size: 50px;
+                    text-align: center;
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    color: rgb(0, 0, 0);
+                    transform: translate(-50%);
+                }
+                .wyniki {
+                    color: #fff;
+                    width: 100%;
+                    margin-right: 150px;
+                }
+                #defaultCanvas {
+                    float: left;
+                }
+            </style>
+        </div>
         <script src="./src/js/snake_functions.js"></script>
         <script src="./src/js/snake.js"></script>
     </body>
