@@ -1,61 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"
-></script>
-<script src="./src/js/mojeapi.js"></script>
-<title>Edamam API Test</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./src/js/mojeapi.js"></script>
+        <title>FoodAPI</title>
+    </head>
 
-<body>
-    <h1>Nutrition Analysis API</h1>
+    <body>
+        <h1>Pobierz Przepis</h1>
 
-    <!-- <label for="app_id">app_id:</label>
-<input type="text" name="app_id" id="app_id">
-<br> -->
-    <!-- <label for="app_key">app_key:</label>
-<input type="text" name="app_key" id="app_key">
-<br> -->
-    <textarea id="recipe" rows="20" cols="80">
-{
-"title": "Fresh Ham Roasted With Rye Bread and Dried Fruit Stuffing",
-"yield": "About 15 servings",
-"ingr": [
-"1 fresh ham, about 18 pounds, prepared by your butcher (See Step 1)",
-"7 cloves garlic, minced",
-"1 tablespoon caraway seeds, crushed",
-"4 teaspoons salt",
-"Freshly ground pepper to taste",
-"1 teaspoon olive oil",
-"1 medium onion, peeled and chopped",
-"3 cups sourdough rye bread, cut into 1/2-inch cubes",
-"1 1/4 cups coarsely chopped pitted prunes",
-"1 1/4 cups coarsely chopped dried apricots",
-"1 large tart apple, peeled, cored and cut into 1/2-inch cubes",
-"2 teaspoons chopped fresh rosemary",
-"1 egg, lightly beaten",
-"1 cup chicken broth, homemade or low-sodium canned"
-]
-}
-</textarea
-    >
-    <br />
-    <button class= "wyslij" type="button" >Submit</button>
-    <hr />
-    Response:
-    <br />
-    <pre id="response"></pre>
-   
-</body>
+        <textarea id="recipe" rows="20" cols="80"> </textarea>
+        <br />
+        <button class="wyslij" type="button">Pobierz</button>
+        <hr />
+        Response:
+        <br />
+        <pre id="response"></pre>
+    </body>
 
-
-<!-- 
+    <!-- 
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
@@ -69,10 +39,10 @@
         <label for="app_id">app_id:</label>
     <input type="text" name="app_id" id="app_id">
     <br> -->
-        <!-- <label for="app_key">app_key:</label>
+    <!-- <label for="app_key">app_key:</label>
     <input type="text" name="app_key" id="app_key">
     <br> -->
-        <!-- <textarea id="recipe" rows="20" cols="80">
+    <!-- <textarea id="recipe" rows="20" cols="80">
 {
   "title": "Fresh Ham Roasted With Rye Bread and Dried Fruit Stuffing",
   "yield": "About 15 servings",
@@ -104,3 +74,4 @@
         <script src="/src/js/mojeapi.js"></script>
     </body>
 </html> -->
+</html>

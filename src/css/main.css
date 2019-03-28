@@ -1064,48 +1064,112 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  background: #aa0063a1;
 }
 
 .show__content .main__lorem .main__portfolio .project1 {
   background: url(../img/projekt1.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 90%;
   width: 100%;
+  margin: 1%;
+  margin-right: 0;
 }
 
 .show__content .main__lorem .main__portfolio .project2 {
   background: url(../img/snejk.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 90%;
   width: 100%;
+  margin: 1%;
+  margin-right: 0;
 }
 
 .show__content .main__lorem .main__portfolio .project3 {
-  background: url(../img/projekt1.png) no-repeat;
+  background: url(../img/under-constj.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 90%;
   width: 100%;
+  margin: 1%;
 }
 
 .show__content .main__lorem .footer__container {
-  height: auto;
+  height: 200px;
   width: 100%;
   background-color: #000;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.show__content .main__lorem .footer__container a {
+  color: white;
+}
+
+.show__content .main__lorem .footer__container a:hover {
+  color: #aa0063;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .show__content .main__lorem .footer__container .footer__container-inner {
   height: 100%;
-  width: 80%;
+  width: 50%;
   padding: 3%;
+}
+
+.show__content .main__lorem .footer__container .footer__container-inner ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 27%;
 }
 
 .show__content .main__lorem .footer__container .footer__container-inner li {
   font-family: 'Press Start 2P', cursive;
   padding: 1%;
   font-size: 0.4em;
+}
+
+.show__content .main__lorem .footer__container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.show__content .main__lorem .footer__container .social .social__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 35px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 21% 0 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -344,30 +344,39 @@ $bgColor: #aa0063;
             .main__projects-container {
                 display: flex;
                 height: 100%;
+                margin: 20px 0;
+                padding: 10px;
+                background: #aa0063a1;
             }
 
             .project1 {
                 background: url(../img/projekt1.png) no-repeat;
                 background-position: center;
                 background-size: cover;
-                height: 100%;
+                height: 90%;
                 width: 100%;
+                margin: 1%;
+                margin-right: 0;
             }
 
             .project2 {
                 background: url(../img/snejk.png) no-repeat;
                 background-position: center;
                 background-size: cover;
-                height: 100%;
+                height: 90%;
                 width: 100%;
+                margin: 1%;
+                margin-right: 0;
             }
 
             .project3 {
-                background: url(../img/projekt1.png) no-repeat;
+                background: url(../img/under-constj.png) no-repeat;
                 background-position: center;
                 background-size: cover;
-                height: 100%;
+                height: 90%;
                 width: 100%;
+                margin: 1%;
+
             }
 
 
@@ -377,21 +386,64 @@ $bgColor: #aa0063;
 
 
         .footer__container {
-            height: auto;
+            height: 200px;
             width: 100%;
             background-color: #000;
             color: white;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: $bgColor;
+
+                    transition: 0.5s;
+                }
+            }
 
             .footer__container-inner {
                 height: 100%;
-                width: 80%;
+                width: 50%;
                 padding: 3%;
+
+                ul {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-left: 27%;
+                }
 
                 li {
                     font-family: 'Press Start 2P',
                         cursive;
                     padding: 1%;
                     font-size: 0.4em;
+                }
+            }
+
+            .social {
+                display: flex;
+                width: 50%;
+                height: 100%;
+
+                .social__icons {
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 35px;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin: 0 21% 0 0;
+
+                    .fb {}
+
+                    .insta {}
+
+                    .linked {}
                 }
             }
         }

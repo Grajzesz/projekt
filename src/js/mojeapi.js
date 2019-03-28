@@ -17,21 +17,22 @@ $(document).ready(() => {
 
     var wyslij = document.getElementsByClassName('wyslij');
     $(wyslij).on('click', function makeCorsRequest() {
-        $(document).ready(() => {
-            $.ajax({
-                url: url
-            }).done(response => {
-                // response.forEach(function(e) {
-                console.log(response);
-                console.log(response.parsed[0].food.uri);
+    $(document).ready(() => {
+        $.ajax({
+            url: url
+        }).done(response => {
+            // response.forEach(function(e) {
+            console.log(response);
+            console.log(response.parsed[0].food.uri);
+            console.log(response.hints[0].measures.uri);
 
-                $(film).append(
-                    `<h2> ${response.text}${response.parsed[0].food.uri}</h2>`
-                    `<h2> ${response.hints}</h2>`
-                );
-                // $(film).append(`<h3>${response.author}</h3>`);
-                // });
-            });
+            $(film).before(`<h2>${response.parsed[0].food.uri}</h2>`);
+            // $(film).before(
+            //     `<a href> ${response.hints[0].measures[0].uri}</a>`
+            // );
+            // $(film).append(`<h3>${response.author}</h3>`);
+            // });
         });
     });
+});
 });
