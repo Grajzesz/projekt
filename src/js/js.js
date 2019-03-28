@@ -6,7 +6,9 @@ $(document).ready(function() {
     $('.navigation').css('display', 'none');
     $('.typewriter').css('display', 'none');
     $('.show__content').css('display', 'none');
-
+    $('.drugi').hide();
+    $('.drugi1').hide();
+    $('.drugi2').hide();
     $('.toggle__button').on('click', function() {
         $('#main').toggleClass('container2');
 
@@ -27,6 +29,16 @@ $(document).ready(function() {
         $('#menuToggle').on('click', function() {
             $('.baba').toggle();
         });
+        $('.project1').hover(function() {
+            $('.drugi').toggle();
+        });
+        $('.project2').hover(function() {
+            $('.drugi1').toggle();
+        });
+        $('.project3').hover(function() {
+            $('.drugi2').toggle();
+        });
+
         $(document).ready(() => {
             const url = 'http://quotes.stormconsultancy.co.uk/random.json';
             const quote = $('.quote__api');
